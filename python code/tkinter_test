@@ -1,4 +1,7 @@
 import cv2
+import numpy as np
+import serial
+import time
 import tkinter as tk
 from tkinter import Label, Button
 from PIL import Image, ImageTk

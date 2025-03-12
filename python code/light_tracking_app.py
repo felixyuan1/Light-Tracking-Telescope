@@ -16,7 +16,7 @@ class VideoApp:
         self.label.pack()
         
         # OpenCV Video Capture. Change this to 1 for USB camera
-        self.cap = cv2.VideoCapture(1)
+        self.cap = cv2.VideoCapture(0)
         
         # Buttons
         self.button_frame = tk.Frame(self.root)
@@ -247,9 +247,9 @@ def send_coord(xValue, yValue):
         print(f"Arduino: {response}")
 
 if __name__ == "__main__":
-    
+    print("hello world")
     # Configure the serial connection
-    arduino = serial.Serial(port='COM4', baudrate=38400, timeout=1)  # Change 'COM3' to your Arduino's port
+    #arduino = serial.Serial(port='COM4', baudrate=38400, timeout=1)  # Change 'COM3' to your Arduino's port
     time.sleep(2)  # Allow time for connection to establish
 
     root = tk.Tk()
